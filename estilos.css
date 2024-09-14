@@ -1,0 +1,142 @@
+:root {
+    --fondo: #3a445d;
+    --fuente: #ffffff;
+    --hover: #d4d2a5;
+    --comentarios-fondo: #bcccd6;
+    --comentarios-color: #414141;
+    --font-family: "Roboto", sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --margin-default: 1rem;
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--fuente);
+    width: 90%;
+    max-width: 64rem;
+    margin: auto;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+}
+
+a {
+    color: var(--fuente);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+hr {
+    border-color: var(--fuente);
+}
+
+h1 {
+    font-weight: var(--font-weight-bold);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
+}
+
+
+footer {
+    text-align: center;
+}
+
+
+.perfil-hugo {
+    width: 400px;
+    margin: auto;
+}
+
+.form-correo {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+input, textarea, button {
+    width: 100%;
+    min-height: 30px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border-style: none;
+}
+
+
+
+textarea {
+    min-height: 400px;
+}
+
+.detalle {
+    display: flex;
+    justify-content: center;
+}
+
+.img-detalle {
+    width: 100%;
+    max-width: 700px;
+}
+
+.comentarios {
+    margin-top: 2rem;
+    color: var(--fuente);
+
+}
+
+.comentario {
+    padding-bottom: 1rem;
+
+}
+
+.comentario-header {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.comentario-header p {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media only screen and (min-width: 64rem) {
+    .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+}
