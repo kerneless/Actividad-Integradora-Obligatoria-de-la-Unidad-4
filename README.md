@@ -15,6 +15,8 @@ Utilizando el proyecto desarrollado en las unidades anteriores,  crear un sitio 
 
     Emplear al menos una estructura de control.
 
+    Emplear funcionalidad que interactúe con la base de datos, utilizando el método POST (por ejemplo: formulario de registro de usuarios).
+
     Implementar funciones del lenguaje (por ejemplo: mail, funciones de mysqli)
 
 
@@ -61,6 +63,10 @@ Voy a resaltar tres estructuras de control utilizadas en mi código:
 
 	a) Hay un if que valida que exista el idFoto, si se cumple la condición, este es guardado en la variable $idFoto (el cuál por defecto es un string vacío).
 	b) Hay un if que valida que el idFoto sea distinto a string vacío. Si se cumple la condición se utiliza para obtener la foto en cuestión. Si no se cumple se mostrará el mensaje de error .
+
+### Emplear funcionalidad POST que interactúe con la base de datos
+
+El formulario maquetado en form_comentarios.php envía los datos necesarios para guardar un comentario en la base de datos a través del método POST. El action apunta a enviar_comentario.php?idFoto=$idFoto, donde se realiza el INSERT.
 
 ### Implementar funciones del lenguaje
 
